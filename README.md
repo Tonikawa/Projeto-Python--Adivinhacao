@@ -9,5 +9,10 @@ A cada dedução errada do número, há uma perda de pontuação.
 O jogo ajudará o usuário mostrando se o chute é menor ou maior que o número secreto.
 
 
-Coisas Aprendidas PYTHON3:
-Entrada de usuário ;Funções build-in; váriaveis; biblioteca ramdom; 
+Coisas Aprendidas PYTHON3
+
+Entrada de usuário;
+Funções build-in;
+váriaveis;
+biblioteca ramdom;
+Funções;
