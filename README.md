@@ -1,5 +1,5 @@
 # Projeto-Python--Adivinhacao
-Projeto feito junto com o curso de Programação em Python da ALURA.
+Projeto feito junto com o curso de Lógica de Programação com Python da ALURA.
 
 O Programa escolhe um número pseudo-aleatorio de 1 a 100 e o usuário terá que adivinhar o número escondido.
 
