@@ -14,5 +14,5 @@ Coisas Aprendidas PYTHON3
 Entrada de usuário;
 Funções build-in;
 váriaveis;
-biblioteca ramdom;
-Funções;
+biblioteca random;
+Funções no geral;
