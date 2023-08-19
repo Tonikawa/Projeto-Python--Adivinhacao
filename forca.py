@@ -9,12 +9,13 @@ def jogar():
     while(not enforcou and not acertou):
        
        chute = input("Qual a letra? ")
-      
+       chute = chute.strip() #tratamento de string - tirando espaço
+
        index = 0
 
        for letra in palavra_secreta:
-          if(chute == letra):
-            print("Você acertou a letra {} na posição {}".format(letra, index))
+          if(chute.upper() == letra.upper()): #tratamento de string- igualando o chute com a palavra secreta
+            print("Você acertou a letra {} na posição {}".format(chute, index))
           index = index + 1
           #else:
              #print("Você errou a letra")
