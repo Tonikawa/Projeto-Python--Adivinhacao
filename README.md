@@ -10,3 +10,7 @@ A cada dedução errada do número, há uma perda de pontuação.
 O jogo ajudará o usuário mostrando se o chute é menor ou maior que o número secreto.
 
 Forca:
+O Programa lê um txt com palavras e assim escolhe uma aleatoriamente para começar o jogo.
+
+O usuario possui sete chances para tentar acertar a palavra secreta, usando letras.
+Para cada erro, o Programa imprime uma mensagem de uma forca que se completa conforme o usuario erra.
