@@ -1,27 +1,29 @@
+import random
+
 def jogar():
-    print("Bem Vindo ao jogo da forca !!")
+   print("Bem Vindo ao jogo da forca !!")
 
-    arquivo= open("palavras.txt", "r")
-    palavras= []  
+   arquivo= open("palavras.txt", "r")
+   palavras= []  
     
-    for linha in arquivo:
-       linha = linha.strip()
-       palavras.append(linha)
+   for linha in arquivo:
+        linha = linha.strip()
+        palavras.append(linha)
 
-    arquivo.close()
+   arquivo.close()
 
-    print(palavras)
-
-    palavra_secreta = "maça".upper()
-    letras_acertadas = ["_" for letra in palavra_secreta] #list comprehensions   
-
-    enforcou = False
-    acertou = False
-    erros = 0
+   numero = random.randrange(0,len(palavras))
+   palavra_secreta = palavras[numero].upper()    
     
-    print(letras_acertadas)
+   letras_acertadas = ["_" for letra in palavra_secreta] #list comprehensions   
 
-    while(not enforcou and not acertou):
+   enforcou = False
+   acertou = False
+   erros = 0
+    
+   print(letras_acertadas)
+
+   while(not enforcou and not acertou):
        
       chute = input("Qual a letra? ")
       chute = chute.strip().upper() #tratamento de string - tirando espaço e padronizando letras
@@ -40,11 +42,11 @@ def jogar():
       acertou = "_" not in letras_acertadas # underscore não está nas letras acertadas, ele encerra
       print(letras_acertadas)
    
-    if(acertou): #acertou = true
+   if(acertou): #acertou = true
        print("Você Ganhou o jogo!")
-    else: #enforcou = true
+   else: #enforcou = true
        print("Você perdeu o jogo!")
-    print("Fim do jogo!!")
+   print("Fim do jogo!!")
   
 if(__name__ == "__main__"):
   jogar()
