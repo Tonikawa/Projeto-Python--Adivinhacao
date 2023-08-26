@@ -1,13 +1,14 @@
 def jogar():
     print("Bem Vindo ao jogo da forca !!")
 
-    palavra_secreta = "banana".upper()
-    letras_acertadas = ["_","_","_","_","_","_"]
-    print(letras_acertadas)
+    palavra_secreta = "maça".upper()
+    letras_acertadas = ["_" for letra in palavra_secreta] #list comprehensions   
 
     enforcou = False
     acertou = False
     erros = 0
+    
+    print(letras_acertadas)
 
     while(not enforcou and not acertou):
        
@@ -28,9 +29,9 @@ def jogar():
       acertou = "_" not in letras_acertadas # underscore não está nas letras acertadas, ele encerra
       print(letras_acertadas)
    
-    if(acertou):
+    if(acertou): #acertou = true
        print("Você Ganhou o jogo!")
-    else:
+    else: #enforcou = true
        print("Você perdeu o jogo!")
     print("Fim do jogo!!")
   
