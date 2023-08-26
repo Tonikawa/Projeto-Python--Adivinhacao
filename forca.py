@@ -21,14 +21,17 @@ def jogar():
                letras_acertadas[index] = letra   #adicionando a letra na lista de letras acertadas na posição certa         
             index += 1
       else:
-         print("Você errou a letra")
          erros = erros + 1
+         print("Você errou {} vez/vezes. Cuidado, você só possui seis chances ". format(erros))
 
       enforcou = erros == 6
+      acertou = "_" not in letras_acertadas # underscore não está nas letras acertadas, ele encerra
       print(letras_acertadas)
-     
-       
-
+   
+    if(acertou):
+       print("Você Ganhou o jogo!")
+    else:
+       print("Você perdeu o jogo!")
     print("Fim do jogo!!")
   
 if(__name__ == "__main__"):
