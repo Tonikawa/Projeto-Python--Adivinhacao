@@ -5,24 +5,18 @@ def jogar():
    imprime_msg_abertura()
    palavra_secreta = carrega_txt()
    letras_acertadas = inicializa_letras_acertadas(palavra_secreta)  
+   print(letras_acertadas)
 
    enforcou = False
    acertou = False
    erros = 0
-    
-   print(letras_acertadas)
 
    while(not enforcou and not acertou):
        
-      chute = input("Qual a letra? ")
-      chute = chute.strip().upper() #tratamento de string - tirando espaço e padronizando letras
+      chute = pede_chute()
 
       if (chute in palavra_secreta):  
-         index = 0
-         for letra in palavra_secreta:
-            if(chute == letra): 
-               letras_acertadas[index] = letra   #adicionando a letra na lista de letras acertadas na posição certa         
-            index += 1
+         marca_chute_posicao(chute, letras_acertadas, palavra_secreta)
       else:
          erros = erros + 1
          print("Você errou {} vez/vezes. Cuidado, você só possui seis chances ". format(erros))
@@ -35,7 +29,7 @@ def jogar():
        print("Você Ganhou o jogo!")
    else: #enforcou = true
        print("Você perdeu o jogo!")
-   print("Fim do jogo!!")
+       
 
 def imprime_msg_abertura():
    print("Bem Vindo ao jogo da forca !!")  
@@ -56,6 +50,18 @@ def carrega_txt():
 
 def inicializa_letras_acertadas(palavra):
    return ["_" for letra in palavra] #list comprehensions 
+
+def pede_chute():
+   chute = input("Qual a letra? ")
+   chute = chute.strip().upper()
+   return chute
+
+def marca_chute_posicao(chute, letras_acertadas, palavra_secreta):
+   index = 0
+   for letra in palavra_secreta:
+      if (chute == letra): 
+         letras_acertadas[index] = letra   #adicionando a letra na lista de letras acertadas na posição certa         
+      index += 1
 
 if(__name__ == "__main__"):
   jogar()
