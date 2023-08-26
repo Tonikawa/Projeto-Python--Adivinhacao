@@ -1,3 +1,4 @@
+#Fabio Silveira Tanikawa--- Terminado em 26 de agosto
 import random 
 
 def jogar():

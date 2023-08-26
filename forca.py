@@ -1,7 +1,7 @@
 import random
 
 def jogar():
-   
+   #Fabio Silveira Tanikawa--- Terminado em 26 de agosto
    imprime_msg_abertura()
    palavra_secreta = carrega_txt()
    letras_acertadas = inicializa_letras_acertadas(palavra_secreta)  

@@ -1,3 +1,4 @@
+#Fabio Silveira Tanikawa--- Terminado em 26 de agosto
 import forca 
 import adivinhação
 print("Escolha seu jogo!")

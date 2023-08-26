@@ -1,6 +1,6 @@
 # Projeto-Python--Adivinhacao
 Projeto feito junto com o curso de Lógica de Programação com Python da ALURA.
-
+Fabio Silveira Tanikawa--- Terminado em 26 de agosto
 Adivinhação:
 O Programa escolhe um número pseudo-aleatorio de 1 a 100 e o usuário terá que adivinhar o número escondido.
 
